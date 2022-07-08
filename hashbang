@@ -1,1 +1,11 @@
 #!/bin/bash
+
+### Regex Patters
+RENUMERIC='^[0-9]+$'
+
+### Text Formating
+TXTBOLD=$(tput bold)
+TXTNORMAL=$(tput sgr0)
+
+### Files and Directories
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
