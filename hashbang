@@ -4,7 +4,7 @@
 # Regex Patterns
 # ----------------- +
 
-RENUMERIC='^[0-9]+$'
+NUMERIC='^[0-9]+$'
 
 # If a pattern matches
 if [[ $N =~ $RENUMERIC ]] ; then
@@ -15,8 +15,8 @@ fi
 # Text Formatting
 # ----------------- +
 
-TXTBOLD=$(tput bold)
-TXTNORMAL=$(tput sgr0)
+BOLD=$(tput bold)
+NORMAL=$(tput sgr0)
 
 # ------ +
 # Find and Replace
