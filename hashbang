@@ -28,3 +28,10 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 if [ -f /path/to/file ]; then
   echo "Exits"
 fi
+
+
+### ----------------------------
+### Windows, Desktop, Workspaces
+### ----------------------------
+
+CURRENT_WORKSPACE=$(wmctrl -d | grep \* | cut -d' ' -f1)+1
