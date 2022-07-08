@@ -1,8 +1,8 @@
 #!/bin/bash
 
-### --------------
-### Regex Patters
-### --------------
+# ------ +
+# Regex Patters
+# ----------------- +
 
 RENUMERIC='^[0-9]+$'
 
@@ -11,9 +11,9 @@ if [[ $N =~ $RENUMERIC ]] ; then
   echo "Matches"
 fi
 
-### --------------
-### Text Formating
-### --------------
+# ------ +
+# Text Formating
+# ----------------- +
 
 TXTBOLD=$(tput bold)
 TXTNORMAL=$(tput sgr0)
@@ -28,9 +28,9 @@ sed -i "s|findthis|replacewiththis|g" /in/this/file
 # Replace entire line matching a string pattern
 sed -i "/find this/c\replace with this entire line" /in/this/file
 
-### --------------
-### Files and Directories
-### --------------
+# ------ +
+# Files and Directories 
+# ----------------- +
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
@@ -40,8 +40,8 @@ if [ -f /path/to/file ]; then
 fi
 
 
-### ----------------------------
-### Windows, Desktop, Workspaces
-### ----------------------------
+# ------ +
+# Windows, Desktop, Workspaces
+# ----------------- +
 
 CURRENT_WORKSPACE=$(wmctrl -d | grep \* | cut -d' ' -f1)+1
