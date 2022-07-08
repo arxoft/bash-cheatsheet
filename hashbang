@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ------ +
-# Regex Patters
+# Regex Patterns
 # ----------------- +
 
 RENUMERIC='^[0-9]+$'
