@@ -1,13 +1,24 @@
 #!/bin/bash
 
 # ------ +
+# Variables
+# ----------------- +
+
+# Arithimetic
+
+let X=1+2
+echo $X // 3
+let Y=$X+3
+echo $Y // 6
+
+# ------ +
 # Regex Patterns
 # ----------------- +
 
 NUMERIC='^[0-9]+$'
 
 # If a pattern matches
-if [[ $N =~ $RENUMERIC ]] ; then
+if [[ $N =~ $NUMERIC ]] ; then
   echo "Matches"
 fi
 
