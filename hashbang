@@ -18,6 +18,16 @@ fi
 TXTBOLD=$(tput bold)
 TXTNORMAL=$(tput sgr0)
 
+# ------ +
+# Find and Replace
+# ----------------- +
+
+# Replace a text with text
+sed -i "s|findthis|replacewiththis|g" /in/this/file
+
+# Replace entire line matching a string pattern
+sed -i "/find this/c\replace with this entire line" /in/this/file
+
 ### --------------
 ### Files and Directories
 ### --------------
