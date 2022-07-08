@@ -34,10 +34,10 @@ NORMAL=$(tput sgr0)
 # ----------------- +
 
 # Replace a text with text
-sed -i "s|findthis|replacewiththis|g" /in/this/file
+sed -i "s|find this|replace with this|g" /in/this/file
 
 # Replace entire line matching a string pattern
-sed -i "/find this/c\replace with this entire line" /in/this/file
+sed -i "/find this/c\replace entire line with this line" /in/this/file
 
 # ------ +
 # Files and Directories 
