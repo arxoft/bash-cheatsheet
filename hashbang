@@ -1,8 +1,29 @@
 #!/bin/bash
 
+
+# ------ +
+# Inputs, Outputs, Args etc
+# ----------------- +
+
+# Take a string input in var $N
+read -p "Enter the hostname for the new virtual host: " N
+
+# Take a single char Y/N input
+read -p "Setup a local SSL? (y/n) " -n 1 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  echo "It's a Yes"
+fi
+
+
 # ------ +
 # Variables
 # ----------------- +
+
+# Check if a var is empty
+if [ -z "$P" ]; then
+  echo "It's Empty"
+fi
 
 # Arithimetic
 
@@ -12,7 +33,7 @@ let Y=$X+3
 echo $Y // 6
 
 # ------ +
-# Regex Patterns
+# Conditions, Regex Patterns etc
 # ----------------- +
 
 NUMERIC='^[0-9]+$'
@@ -21,6 +42,11 @@ NUMERIC='^[0-9]+$'
 if [[ $N =~ $NUMERIC ]] ; then
   echo "Matches"
 fi
+
+# Compare numeric value of a var
+if (( $SSL == 1 )); then
+  echo "Matches"
+ fi
 
 # ------ +
 # Text Formatting
