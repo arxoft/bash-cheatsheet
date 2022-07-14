@@ -28,6 +28,9 @@ fi
 
 BOLD=$(tput bold)
 NORMAL=$(tput sgr0)
+RED='\x1b[31m'
+YELLOW='\x1b[33m'
+NONE='\033[00m'
 
 # ------ +
 # Find and Replace
